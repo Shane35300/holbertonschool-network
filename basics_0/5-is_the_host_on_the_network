@@ -4,8 +4,4 @@ if [ $# -eq 0 ]; then
     echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
     exit 1
 fi
-
-# Le premier argument est stocké dans la variable "input_string"
-input_string="$1"
-
-ping -c 5 $1
+ping -c 5 "$1"
